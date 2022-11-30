@@ -9,5 +9,9 @@ button.addEventListener("click", function(event){
     }else{
         divContainer.style.display = "block";
         let input = document.querySelector('input');
+
+        let newParagraf = document.createElement('p');
+        newParagraf.classList.add('.notePrg');
+        newParagraf.innerText = input.value;
     }
 })
