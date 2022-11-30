@@ -13,5 +13,10 @@ button.addEventListener("click", function(event){
         let newParagraf = document.createElement('p');
         newParagraf.classList.add('.notePrg');
         newParagraf.innerText = input.value;
+
+        let divContent = document.createElement('div');
+        divContent.classList.add('divcontent');
+        divContent.append(newParagraf);
+        divContainer.append(divContent);
     }
 })
