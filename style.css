@@ -1,1 +1,87 @@
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+form{
+    width: 40%;
+    height: auto;
+    margin: 50px auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+}
+.empty{
+    height: 50px;
+    background-color: rgb(230, 167, 84);
+    border-radius: 5px;
+    margin-bottom: 20px;    
+}
+p{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+input{
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 5px 10px;
+    outline: none;
+    width: 50%;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+label{
+    position: relative;
+}
+label .bx{
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+button{
+    padding: 5px 25px;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    border: 1px solidb black;
+    margin-bottom: 20px;
+}
+.icons{
+    display: inline-block;
+    margin: 0px auto;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+.icons .bx-sort-down{
+    display: none;
+}
+.prgg{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    display: inline-block;
+}
+.formDiv{
+    border: 1px solid #000;
+    width: 50%;
+    margin: 5px auto;
+    display: none;
+}
+.divconnect{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+.divconnect .bxs-x-circle:hover{
+    opacity: 1;
+    color: rgba(56,56,245,0.829);
+    transform: scale(1.1);
+}
