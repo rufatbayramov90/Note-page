@@ -21,5 +21,14 @@ button.addEventListener("click", function(event){
         divContent.appendChild(i);
         divContent.append(newParagraf);
         divContainer.append(divContent);
+        
+        input.value = "";
+
+        i.addEventListener("click", function(){
+            this.parentElement.remove();
+            if(divContainer.innerText == ""){
+                divContainer.style.display = "none";
+            }
+        })
     }
 })
