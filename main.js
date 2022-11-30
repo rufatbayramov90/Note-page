@@ -16,13 +16,14 @@ button.addEventListener("click", function(event){
 
         let divContent = document.createElement('div');
         divContent.classList.add('divcontent');
-        let i = document.createElement('i');
-        i.className= 'bx bxs-x-circle';
-        divContent.appendChild(i);
         divContent.append(newParagraf);
         divContainer.append(divContent);
-        
+        //----------------
+        let i = document.createElement('i');
+        i.className='bx bxs-x-circle';
+        divContent.appendChild(i);
         input.value = "";
+
 
         i.addEventListener("click", function(){
             this.parentElement.remove();
@@ -30,5 +31,29 @@ button.addEventListener("click", function(event){
                 divContainer.style.display = "none";
             }
         })
+
+        const str = document.querySelector('.bx-sort-up');
+        const icn = document.querySelector('bx-sort-down');
+        str.addEventListener("click", function(){
+            str.style.display = "none";
+            icn.style.display = "block";
+            const task = [...document.querySelectorAll('.divcontent')];
+            task.sort((a,b)=>{
+                return parseInt(b.innerText) - parseInt(a.innerText);
+            })
+            divContainer.replaceChildren(...divContainer.children,...task)
+        })
+        icn.addEventListener("click", function(){
+            str.style.display = "block";
+            icn.style.display = "none";
+            const task = [...document.querySelectorAll('.divcontent')];
+          task.sort((a,b)=>{
+            return parseInt(a.innerText) - parseInt(b.innerText);  
+          })
+          divContainer.replaceChildren(...divContainer.children,...task)
+          
+        })
+        
+
     }
 })

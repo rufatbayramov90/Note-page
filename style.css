@@ -80,6 +80,10 @@ button{
     justify-content: space-between;
     padding: 0px 5px;
 }
+.divcontent .bxs-x-circle{
+    opacity: .7;
+    color: rgb(134, 131, 131);
+  }
 .divconnect .bxs-x-circle:hover{
     opacity: 1;
     color: rgba(56,56,245,0.829);
