@@ -16,6 +16,9 @@ button.addEventListener("click", function(event){
 
         let divContent = document.createElement('div');
         divContent.classList.add('divcontent');
+        let i = document.createElement('i');
+        i.className= 'bx bxs-x-circle';
+        divContent.appendChild(i);
         divContent.append(newParagraf);
         divContainer.append(divContent);
     }
