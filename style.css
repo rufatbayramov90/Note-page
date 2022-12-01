@@ -19,7 +19,7 @@ form{
 }
 p{
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -29,6 +29,7 @@ input{
     padding: 5px 10px;
     outline: none;
     width: 50%;
+    border: none;
     border: 1px solid #000;
     border-radius: 5px;
 }
@@ -45,7 +46,7 @@ button{
     border-radius: 5px;
     color: #000;
     cursor: pointer;
-    border: 1px solidb black;
+    border: 1px solid black;
     margin-bottom: 20px;
 }
 .icons{
@@ -73,19 +74,19 @@ button{
     margin: 5px auto;
     display: none;
 }
-.divconnect{
+.divcontent{
     width: 100%;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
-    padding: 0px 5px;
+    padding: 2px 5px;
 }
 .divcontent .bxs-x-circle{
     opacity: .7;
     color: rgb(134, 131, 131);
-  }
-.divconnect .bxs-x-circle:hover{
+}
+  .divcontent .bxs-x-circle:hover{
     opacity: 1;
-    color: rgba(56,56,245,0.829);
+    color: rgb(38, 108, 165);
     transform: scale(1.1);
 }

@@ -11,7 +11,7 @@ button.addEventListener("click", function(event){
         let input = document.querySelector('input');
 
         let newParagraf = document.createElement('p');
-        newParagraf.classList.add('.notePrg');
+        newParagraf.classList.add('notePrg');
         newParagraf.innerText = input.value;
 
         let divContent = document.createElement('div');
@@ -33,7 +33,7 @@ button.addEventListener("click", function(event){
         })
 
         const str = document.querySelector('.bx-sort-up');
-        const icn = document.querySelector('bx-sort-down');
+        const icn = document.querySelector('.bx-sort-down');
         str.addEventListener("click", function(){
             str.style.display = "none";
             icn.style.display = "block";
@@ -53,7 +53,5 @@ button.addEventListener("click", function(event){
           divContainer.replaceChildren(...divContainer.children,...task)
           
         })
-        
-
     }
 })
